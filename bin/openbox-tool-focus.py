@@ -9,7 +9,7 @@ argc = len(argv)
 
 home = environ['HOME']
 rc = home + '/.config/openbox/rc.xml'
-me = 'openbox-placement.py'
+me = 'openbox-focus.py'
 
 key_name = 'focus'
 

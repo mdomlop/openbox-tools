@@ -9,7 +9,7 @@ argc = len(argv)
 
 home = environ['HOME']
 rc = home + '/.config/openbox/rc.xml'
-me = 'openbox-placement.py'
+me = 'openbox-tool-placement.py'
 
 tree = ET.parse(rc)
 root = tree.getroot()
