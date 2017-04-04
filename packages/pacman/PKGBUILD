@@ -13,7 +13,7 @@ arch=('any')
 url="https://github.com/manueldl/${_gitname}"
 source=("git+https://github.com/manueldl/${_gitname}.git")
 license=('GPL3')
-depends=('python>=3', 'openbox', 'python-xlib>=0.19')
+depends=('python>=3' 'openbox' 'python-xlib>=0.19')
 makedepends=('git')
 conflicts=(${_gitname})
 
