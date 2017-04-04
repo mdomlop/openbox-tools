@@ -1,21 +1,20 @@
 # Maintainer: Manuel Domínguez López <mdomlop at gmail dot com>
 
 _pkgver_year=2017
-_pkgver_month=03
-_pkgver_day=31
+_pkgver_month=04
+_pkgver_day=04
 
 _gitname=openbox-tools
 pkgname=${_gitname}-git
 pkgver=41
 pkgrel=1
-pkgdesc="A simple fortune interface written in python tk."
+pkgdesc="A set of small utilities for Openbox window manager."
 arch=('any')
 url="https://github.com/manueldl/${_gitname}"
 source=("git+https://github.com/manueldl/${_gitname}.git")
 license=('GPL3')
-depends=('python>=3', 'fortune-mod')
+depends=('python>=3', 'openbox', 'python-xlib>=0.19')
 makedepends=('git')
-optdepends=('fortune-mod-es: Fortune Cookies in Spanish')
 conflicts=(${_gitname})
 
 md5sums=('SKIP')
