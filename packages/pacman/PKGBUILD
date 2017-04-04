@@ -4,7 +4,7 @@ _pkgver_year=2017
 _pkgver_month=03
 _pkgver_day=31
 
-_gitname=fortunereader
+_gitname=openbox-tools
 pkgname=${_gitname}-git
 pkgver=41
 pkgrel=1
