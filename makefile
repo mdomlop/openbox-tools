@@ -26,7 +26,7 @@ uninstall:
 	rm -f $(PREFIX)/bin/openbox-tool-client-spawn-new
 	rm -f $(PREFIX)/bin/openbox-tool-client-spawn-clone
 	rm -f $(PREFIX)/bin/openbox-tool-version
-togit:
+togit: clean
 	git add .
 	git commit -m "Updated from makefile"
 	git push origin
@@ -34,7 +34,7 @@ togit:
 clean:
 	rm -f packages/pacman/$(NAME)-*.pkg.tar.xz
 
-pacman:
+pacman: clean
 	mkdir $(TEMPDIR)
 	cp packages/pacman/PKGBUILD $(TEMPDIR)/
 	cd $(TEMPDIR); makepkg -dr
